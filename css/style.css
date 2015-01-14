@@ -1,0 +1,76 @@
+/*body{
+	background-color: purple;
+}*/
+
+/*.main{
+	background-color: white;
+	margin-top: 75px;
+	width: 1200px;
+ 	height: 1200px;
+ 	position: relative;
+}*/
+
+/*.notepad{
+	float: left;
+}*/
+@font-face{
+	font-family: 'Crafty Girls', cursive;
+}
+
+.notepad-background{
+	position: relative;
+	width: 600px;
+  	height: 1200px;
+	background-image: url('../images/notepad2.png');
+	background-repeat: no-repeat;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.notepad-header{
+	position: relative;
+	/*border-style: dashed;
+	border-color: red;*/
+	width: 510px;
+	top: 105px;
+	left: 75px;	
+}
+
+h2{
+	text-align: center;
+	font-family: 'Crafty Girls', cursive;
+	font-size: 2.5em;
+	font-weight: 100;
+	
+}
+
+input[type=text]{
+	height: 2em;
+	/*width: 300px;*/
+}
+
+.add-items{
+	/*border-style: dashed;
+	border-color: red;*/
+	position: relative;
+	text-align: center;
+	width: 510px;
+	left: 75px;
+	top: 75px;
+	font-family: 'Crafty Girls', cursive;
+	font-size: 1.5em;
+}
+
+.list-items{
+	position: relative;
+	top: 50px;
+	left: 40px;
+	font-family: 'Crafty Girls', cursive;
+	font-size: 1.5em;
+	/*line-height:*/ 
+}
+
+.purchased{
+	text-decoration: line-through;
+}
+
