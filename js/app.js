@@ -1,20 +1,25 @@
 $(document).ready(function(){
-	$("input:text").keydown(function(e){
+	// use enter to add list items
+	$('#item').keydown(function(e){
 		if(e.keyCode == 13){
-		$("ul").prepend('<li>' +(this.value) + '</li>');	
-			
+			//e.preventDefault();
+			//$("ul").prepend('<li>' +(this.value) + '</li>');
+			//$("#btn").click();	
 		}
-  });
-	// $("#btn").click(function(){
-	// 	console.log($('input:text').val());
- //  })
+  })
+	//add list items
+	$("#btn").click(function(){
+		event.preventDefault();
+		$("ul").prepend('<li>' +($('#item').val()) + '</li>');
+		$('#item').val("");
+  })
+
 	
 })
 
-	//$("ul").append('<li>' + $('input#item').val() + '</li>');
-		//alert(this.value);
-		//console.log(this.value);
-		//console.log("clicked");
-		//($('input:text').val());
+	// event.preventDefault(); -- by default the form automatically 
+	// efreshes when the function run, this stops the default operation
+	
+	//($('input:text').val());
 
 
