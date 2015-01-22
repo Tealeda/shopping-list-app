@@ -20,7 +20,7 @@
 .notepad-background{
 	position: relative;
 	width: 600px;
-  	height: 1200px;
+  	/*height: 1200px;*/
 	background-image: url('../images/notepad2.png');
 	background-repeat: no-repeat;
 	margin-left: auto;
@@ -32,7 +32,7 @@
 	/*border-style: dashed;
 	border-color: red;*/
 	width: 510px;
-	top: 105px;
+	top: 30px;
 	left: 75px;	
 }
 
@@ -56,21 +56,59 @@ input[type=text]{
 	text-align: center;
 	width: 510px;
 	left: 75px;
-	top: 75px;
+	top: 4px;
 	font-family: 'Crafty Girls', cursive;
 	font-size: 1.5em;
 }
 
-.list-items{
+.grocery-list{
 	position: relative;
-	top: 50px;
-	left: 40px;
+	top: 1px;
+	/*left: 10px;*/
 	font-family: 'Crafty Girls', cursive;
 	font-size: 1.5em;
+	margin-bottom: 0px;
 	/*line-height:*/ 
 }
 
 .purchased{
 	text-decoration: line-through;
+	color: grey;
 }
 
+li{
+  list-style:none;
+   cursor: default;
+   margin-bottom: -6px;
+}
+
+.checkBox{
+	position: relative;
+	left: 10px;
+	top: -5px;
+	/*border-style: dashed;
+	border-color: red;*/
+}
+
+.food{
+	display: inline;
+	position: relative;
+	left: 20px;
+	/*border-style: dashed;
+	border-color: red;*/
+	
+
+}
+
+.delete{
+  color: red;
+  display: none;
+  /*display: inline;*/
+  /*float: right;*/
+  width: 100px;
+  
+}
+
+.show{
+  display: inline;
+}
